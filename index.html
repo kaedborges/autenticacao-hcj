@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="page" class="flex">
+    <div>
+      <header>
+      <img src="assets/image/logo.svg" alt="">
+    </header>
+    <main>
+      <div class="headline">
+        <h1>Acesse a plataforma</h1>
+        <p>
+          Faça login ou registre-se para começar a construir seus projectos ainda hoje.
+        </p>
+      </div>
+      <form action="">
+        <div class="input-wrapper">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="input-wrapper">
+          <div class="label-wrapper flex">
+            <label for="email">Senha</label>
+            <a href="forget-password.html">Esqueceu a senha?</a>
+          </div>          
+          <input type="password" id="senha" placeholder="Digite sua Senha" required>
+
+          <img onclick="togglePassword()" class="eye " src="assets/image/eye-off.svg" alt="">
+          <img onclick="togglePassword()" class="eye hide" src="assets/image/eye.svg" alt="">
+        </div>
+
+        <button type="submit">Entrar</button>
+
+        <div class="create-account">
+          Ainda não tem uma conta? 
+          <a href="register.html">Inscreva-se</a>
+        </div>
+      </form>
+    </main>
+    </div>
+    <img src="assets/image/bg.jpg" alt="">
+    
+  </div>
+  <script src="/assets/js/login.js"></script>
+</body>
+</html>

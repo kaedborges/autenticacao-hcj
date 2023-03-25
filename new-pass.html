@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="page" class="flex">
+    <div>
+      <header>
+      <img src="assets/image/logo.svg" alt="">
+    </header>
+    <main>
+      <div class="headline">
+        <h1>Redefine a Senha</h1>       
+      </div>
+      <form action="">
+       <div class="input-wrapper">
+          <div class="label-wrapper flex">
+            <label for="email">Senha Actual</label>
+          </div>          
+          <input type="password" id="senha" placeholder="Digite sua Senha Actual" required>
+
+          <img onclick="togglePassword()" class="eye " src="assets/image/eye-off.svg" alt="">
+          <img onclick="togglePassword()" class="eye hide" src="assets/image/eye.svg" alt="">
+        </div>
+        <div class="input-wrapper">
+          <div class="label-wrapper flex">
+            <label for="email">Nova Senha</label>
+          </div>          
+          <input type="password" id="senha" placeholder="Digite sua Nova Senha" required>
+
+          <img onclick="togglePassword()" class="eye " src="assets/image/eye-off.svg" alt="">
+          <img onclick="togglePassword()" class="eye hide" src="assets/image/eye.svg" alt="">
+        </div>
+        <div class="input-wrapper">
+          <div class="label-wrapper flex">
+            <label for="email">Confirmar Nova Senha</label>
+          </div>          
+          <input type="password" id="senha_confirmed" placeholder="Confirme Nova Senha" required>
+
+          <img onclick="togglePasswordConfirmed()" class="eye " src="assets/image/eye-off.svg" alt="">
+          <img onclick="togglePasswordConfirmed()" class="eye hide" src="assets/image/eye.svg" alt="">
+        </div>
+
+        <button type="submit">Entrar</button>
+
+        <div class="create-account">
+          Já tem uma conta? 
+          <a href="index.html">Login</a>
+        </div>
+      </form>
+    </main>
+    </div>
+    <img src="assets/image/bg.jpg" alt="">
+    
+  </div>
+  <script src="assets/js/register.js"></script>
+</body>
+</html>
